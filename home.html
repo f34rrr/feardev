@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html style="scroll-behavior: smooth;">
+<head>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <title>fear-dev</title>
+</head>
+
+<body data-aos-delay="400" data-aos-easing="ease" data-aos-duration="400">
+  <div class="loader">
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAKgAAAB+CAMAAACH8qq0AAAAA1BMVEUAAACnej3aAAAALElEQVR4nO3BMQEAAADCoPVPbQ0PoAAAAAAAAAAAAAAAAAAAAAAAAAAA4MUAUy4AAZV67RMAAAAASUVORK5CYII=" width="100%" height="100%">
+</div>
+<style> .loader {
+  position: fixed;
+  background-color: #FFF;
+  opacity: 0;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+</style>
+  <section class="bg-dark" style="padding: 10%;">
+  <div class="text-center" data-aos="fade-up">
+    <img src="https://media.discordapp.net/attachments/1123863740534751242/1127020461532921856/67b592cc-4046-4f7b-9081-3cb1794ed575.png" alt="Image" width="150px" height="150px" class="rounded-circle"/>
+    <h1 class="bd-title mb-0 text-white" style="margin: 20px;">fearlol_</h1>
+    <button class="btn btn-lg text-white" style="background-color: #151515;" onclick="document.getElementById('hire').scrollIntoView();">Hire</button>
+    <button class="btn btn-lg text-white" style="background-color: #151515;" onclick="document.getElementById('info').scrollIntoView();">Learn more</button>
+  </div>
+    </section>
+  <section class="bg-white" style="margin: 20%;">
+    <div class="text-start" data-aos="fade-left" id="info">
+      <div>
+        <h1>Who are you?</h1>
+        <p>A javascript, python, html, lua, and roblox coder. Hiring is only $4.99.</p>
+        <img src="https://media3.giphy.com/media/26tn33aiTi1jkl6H6/giphy.gif?cid=790b7611jxrrqcjakddaz593mfkguxmhr53ot6y5d8r466cm&amp;ep=v1_gifs_search&amp;rid=giphy.gif&amp;ct=g" alt="Hack Coding GIF by Matthew Butler - Find &amp; Share on GIPHY" width="550px" height="250px"/>
+        <p class="text-secondary">^^ this is not mine</p>
+      </div>
+    </div>
+          <div class="text-end" style="margin: 20%;" data-aos="fade-right">
+        <h1>What do you make?</h1>
+        <p>I make websites, discord bots, and games.</p>
+            <img src="https://media.discordapp.net/attachments/1120853785028333680/1128457388308041868/ezgif-2-6172e4ec51.gif" width="500px" height="250px">
+      </div>
+  </section>
+  <section class="bg-dark" style="padding: 10%;" id="hire" data-aos="zoom-in">
+    <div>
+      <h1 class="text-white">How to hire?</h1>
+      <p class="text-white">DM me on discord, $0.99 to $4.99, depends on the work. I also accept robux, 80 to 500 robux.</p>
+      <button class="btn btn-lg text-white" style="background-color: #151515;" onclick="window.location.href='https://discordapp.com/users/1093632029985362020';">Hire</button>
+<button class="btn btn-lg text-white" style="background-color: #151515;" onclick="copy()">Gmail</button>
+      <input class="bg-dark" disabled type="text" value="f34rdev@gmail.com" id="input" style="display: none;">
+<script>
+function copy() {
+  var copyText = document.getElementById("input");
+  copyText.select();
+  copyText.setSelectionRange(0, 99999)
+  document.execCommand("copy");
+  navigator.clipboard.writeText(copyText.value);
+  alert("Copied! " + copyText.value);
+}
+</script>
+    </div>
+  </section>
+  <script>
+  AOS.init();
+</script>
+  <style>
+.loader {
+    -webkit-animation: load-out 1s;
+    animation: load-out 1s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes load-out {
+    from {
+        top: 0;
+        opacity: 1;
+    }
+
+    to {
+        top: 100%;
+        opacity: 0;
+    }
+}
+
+@keyframes load-out {
+    from {
+        top: 0;
+        opacity: 1;
+    }
+
+    to {
+        top: 100%;
+        opacity: 0;
+    }
+}
+</style>
+</body>
+</html>
